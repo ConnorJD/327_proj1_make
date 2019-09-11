@@ -9,3 +9,7 @@ main.o: main.cpp myfunc.h
 #Rebuild the myfunc.o file
 myfunc.o: myfunc.cpp myfunc.h
 	g++ ${CFLAGS} -c myfunc.cpp
+
+#'make clean' removes the executables and .o files
+clean:
+	rm -f *.o myexe
